@@ -12,14 +12,15 @@
     <properties>
         <guava.version>25.0-jre</guava.version>
         <jackson.version>2.9.5</jackson.version>
+        <httpclient.version>4.5.5</httpclient.version>
 
         <junit.jupiter.version>5.0.2</junit.jupiter.version>
         <junit.platform.version>1.0.2</junit.platform.version>
-        <compiler-plugin.version>3.7.0</compiler-plugin.version>
 
         <slf4j.version>1.7.25</slf4j.version>
         <logback.version>1.2.3</logback.version>
 
+        <compiler-plugin.version>3.7.0</compiler-plugin.version>
         <jdk.version>1.9</jdk.version>
     </properties>
     <dependencyManagement>
@@ -63,6 +64,11 @@
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
                 <version>${logback.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
